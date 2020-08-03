@@ -1,0 +1,3 @@
+2020-08-03 09:48:33,944 DEBUG [org.mybatis.spring.SqlSessionUtils] Creating a new SqlSession
+2020-08-03 09:48:33,953 DEBUG [org.mybatis.spring.SqlSessionUtils] SqlSession [org.apache.ibatis.session.defaults.DefaultSqlSession@4648b50c] was not registered for synchronization because synchronization is not active
+2020-08-03 09:48:33,954 DEBUG [org.mybatis.spring.SqlSessionUtils] Closing non transactional SqlSession [org.apache.ibatis.session.defaults.DefaultSqlSession@4648b50c]
