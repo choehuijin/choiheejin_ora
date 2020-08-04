@@ -18,9 +18,9 @@
 					<ul class="app_list">
 						<li class="clear">
 						<label for="bod_type_lbl" class="tit_lbl pilsoo_item">게시판선택</label>
-						<select name="bod_type" id="bod_type_lbl" class="select_common">
+						<div class="app_content"><select name="bod_type" id="bod_type_lbl" class="select_common">
 	                      <option value="${boardVO.bod_type}">${boardVO.bod_type}</option>
-	                    </select>
+	                    </select></div>
 	                    </li>
 						<li class="clear">
 							<label for="title_lbl" class="tit_lbl pilsoo_item">제목</label>

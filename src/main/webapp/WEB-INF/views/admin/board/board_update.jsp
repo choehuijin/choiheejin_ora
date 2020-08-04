@@ -31,6 +31,7 @@
 						</div>
 						<!-- /.card-header -->
 						<div class="card-body">
+						
 							<form role="form" action="/admin/board/update" method="post" encType="multipart/form-data">
 								<div class="row">
 									<div class="col-sm-12">
@@ -97,6 +98,7 @@
 									</div>
 								</div>
 							</form>
+						
 						</div>
 						<!-- /.content-header -->
 

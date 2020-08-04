@@ -1,5 +1,6 @@
 <%@ page language="java" contentType="text/html; charset=UTF-8"
     pageEncoding="UTF-8"%>
+<%@ taglib uri="http://java.sun.com/jsp/jstl/core" prefix="c" %>
 <!DOCTYPE html>
 <html lang="ko">
 <head>
@@ -105,7 +106,12 @@ if('${msg}' != ""){
                   <p>회원관리</p>
                 </a>
               </li>
-              
+              <li class="nav-item">
+                <a href="/admin/bodtype/list" class="nav-link">
+                  <i class="far fa-circle nav-icon"></i>
+                  <p>게시판생성</p>
+                </a>
+              </li>
               <li class="nav-item has-treeview">
                 <a href="#" class="nav-link">
                   <i class="far fa-circle nav-icon"></i>
@@ -114,7 +120,15 @@ if('${msg}' != ""){
                   </p>
                 </a>
 	            <ul class="nav nav-treeview">
-		              <li class="nav-item">
+		              <c:forEach items="${boardTypeMenu}" var="boardTypeMenu" >
+			              <li class="nav-item">
+			                <a href="/admin/board/list?searchBoard=${boardTypeMenu.bod_type}" class="nav-link">
+			                  <i class="far fa-circle nav-icon"></i>
+			                  <p>${boardTypeMenu.bod_name}</p>
+			                </a>
+			              </li>
+		              </c:forEach>
+		              <!-- <li class="nav-item">
 		                <a href="/admin/board/list?searchBoard=notice" class="nav-link">
 		                  <i class="far fa-circle nav-icon"></i>
 		                  <p>공지사항</p>
@@ -123,9 +137,9 @@ if('${msg}' != ""){
 		              <li class="nav-item">
 		                <a href="/admin/board/list?searchBoard=gallery" class="nav-link">
 		                  <i class="far fa-circle nav-icon"></i>
-		                  <p>겔러리</p>
+		                  <p>갤러리</p>
 		                </a>
-		              </li>
+		              </li> -->
 	            </ul>
               </li>
               
