@@ -67,7 +67,7 @@
 	
 		<!-- about_area -->
 		<div class="about_area">
-			<h2>OOOO OOOOO 스프링 <b>TOP 3</b></h2>
+			<h2>OOOO OOOOO 최희진 바보~~~~ 스프링 <b>TOP 3</b></h2>
 			<div class="about_box">
 				<ul class="place_list box_inner clear">
 					<c:forEach items="${boardListGallery}" var="boardVO" varStatus="status">
