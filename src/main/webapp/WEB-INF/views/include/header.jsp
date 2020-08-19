@@ -42,9 +42,7 @@ if('${msg}' != ""){
 				<c:choose>
 					<c:when test="${session_enabled eq 'true' }">
 						<li><span style="color:white">${session_username}님[${session_userid}] 환영합니다.!</span>
-						</li>
-						<li><a href="/logout">나는 바보 멍청이다 ㅎㅎ</a>
-						</li>
+						</li>						
 						<li><a href="/logout">로그아웃</a>
 						</li>
 						<li><a href="/mypage/update">마이페이지</a>
@@ -56,8 +54,6 @@ if('${msg}' != ""){
 					</c:when>
 					<c:otherwise>
 						<li><a href="/login">로그인</a>
-						</li>
-						<li><a href="#">내사랑 용현이 ㅎㅎ</a>
 						</li>
 						<li><a href="/mypage/insert">회원가입</a>
 						</li>
